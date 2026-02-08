@@ -104,8 +104,33 @@ for fold, (train_idx, test_idx) in enumerate(skf.split(np.arange(len(df)), y)):
 accs = [r["acc"] for r in results]
 f1s = [r["f1_macro"] for r in results]
 wfs = [r["f1_weighted"] for r in results]
+f1_per_class_list = [r["f1_per_class"] for r in results]
+
+# Compute mean and std for per-class F1 scores
+f1_per_class_array = np.array(f1_per_class_list)
+f1_per_class_mean = np.mean(f1_per_class_array, axis=0)
+f1_per_class_std = np.std(f1_per_class_array, axis=0)
+
+# Class names mapping (reverse of label_map)
+class_names = {0: "reason", 1: "statement", 2: "notification", 3: "none"}
 
 print("\n================ FINAL RESULTS ================")
 print(f"Accuracy: {np.mean(accs):.4f} ± {np.std(accs):.4f}")
 print(f"Macro F1: {np.mean(f1s):.4f} ± {np.std(f1s):.4f}")
 print(f"Weighted F1: {np.mean(wfs):.4f} ± {np.std(wfs):.4f}")
+print("\nPer-class F1 scores:")
+for class_id, class_name in class_names.items():
+    print(f"  {class_name}: {f1_per_class_mean[class_id]:.4f} ± {f1_per_class_std[class_id]:.4f}")
+'''
+# ============================================
+# AGGREGATE RESULTS
+# ============================================
+accs = [r["acc"] for r in results]
+f1s = [r["f1_macro"] for r in results]
+wfs = [r["f1_weighted"] for r in results]
+
+print("\n================ FINAL RESULTS ================")
+print(f"Accuracy: {np.mean(accs):.4f} ± {np.std(accs):.4f}")
+print(f"Macro F1: {np.mean(f1s):.4f} ± {np.std(f1s):.4f}")
+print(f"Weighted F1: {np.mean(wfs):.4f} ± {np.std(wfs):.4f}")
+'''

@@ -3,8 +3,8 @@ import torch
 import json
 
 # Load one fold
-data = torch.load("/home/baloni/Perspective-Aware-KG/data/training/graph_fold_1.pt", weights_only=False)
-metadata = json.load(open("/home/baloni/Perspective-Aware-KG/data/graph/metadata.json"))
+data = torch.load("/home/baloni/Perspective-Aware-KG/data/training/embed_graph_fold_1.pt", weights_only=False)
+metadata = json.load(open("/home/baloni/Perspective-Aware-KG/data/graph/metadata_inductive.json"))
 
 print("Graph loaded successfully!")
 print(f"  Nodes: {data.x.shape[0]}")
@@ -24,7 +24,7 @@ assert data.x.shape[0] == data.y.shape[0], "Feature/label mismatch"
 assert data.train_mask.sum() + data.test_mask.sum() == data.x.shape[0], "Mask coverage issue"
 assert data.edge_index.max() < data.x.shape[0], "Edge index out of bounds"
 
-print("\n✅ All checks passed!")
+print("\n All checks passed!")
 
 #Edge Connectivity
 
