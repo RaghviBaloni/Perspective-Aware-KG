@@ -35,7 +35,7 @@ def merge_annotation_files(success_file, failed_file, output_file):
 
 if __name__ == "__main__":
     merge_annotation_files(
-        "/home/baloni/Perspective-Aware-KG/data/annotations/pass1_llama-3.1-70b-awq_full_20260119_123634.json",
-        "/home/baloni/Perspective-Aware-KG/data/annotations/pass1_llama-3.1-70b-awq_full_20260119_123634_failed.json",
-        "/home/baloni/Perspective-Aware-KG/data/processed/merged_annotations_1.json"
+        "/home/user/Perspective-Aware-KG/data/annotations/pass1_llama-3.1-70b-awq_full_20260119_123634.json",
+        "/home/user/Perspective-Aware-KG/data/annotations/pass1_llama-3.1-70b-awq_full_20260119_123634_failed.json",
+        "/home/user/Perspective-Aware-KG/data/processed/merged_annotations_1.json"
     )
