@@ -12,7 +12,7 @@ from datetime import datetime
 from tqdm import tqdm
 
 # ---------------- Config ----------------
-DATA_DIR = Path("/home/baloni/Perspective-Aware-KG/data")
+DATA_DIR = Path("data")
 EMB_DIR = DATA_DIR / "embeddings"
 PROC_DIR = DATA_DIR / "processed"
 TRAINING_DIR = DATA_DIR / "training"
