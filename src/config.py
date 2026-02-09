@@ -237,25 +237,25 @@ def validate_config():
     missing_files = [f for f in required_files if not f.exists()]
     
     if missing_files:
-        print("⚠️  WARNING: Missing required files:")
+        print("WARNING: Missing required files:")
         for f in missing_files:
             print(f"  - {f}")
         return False
     
-    print("✅ All required data files found")
+    print("All required data files found")
     return True
 
 if __name__ == "__main__":
     print("=" * 70)
     print("TACO PERSPECTIVE ANNOTATION - CONFIGURATION")
     print("=" * 70)
-    print(f"\n📁 Project Root: {PROJECT_ROOT}")
-    print(f"📁 Data Directory: {DATA_DIR}")
-    print(f"📁 Logs Directory: {LOG_DIR}")
-    print(f"📁 Results Directory: {RESULTS_DIR}")
-    print(f"\n🔧 Default Model: {DEFAULT_MODEL}")
-    print(f"🔧 Batch Size: {BATCH_SIZE}")
-    print(f"🔧 Pass 1 Fetch URLs: {PASS_1_FETCH_URLS}")
-    print(f"🔧 Pass 2 Fetch URLs: {PASS_2_FETCH_URLS}")
+    print(f"\nProject Root: {PROJECT_ROOT}")
+    print(f"Data Directory: {DATA_DIR}")
+    print(f"Logs Directory: {LOG_DIR}")
+    print(f"Results Directory: {RESULTS_DIR}")
+    print(f"\n Default Model: {DEFAULT_MODEL}")
+    print(f"Batch Size: {BATCH_SIZE}")
+    print(f"Pass 1 Fetch URLs: {PASS_1_FETCH_URLS}")
+    print(f"Pass 2 Fetch URLs: {PASS_2_FETCH_URLS}")
     print("\n" + "=" * 70)
     validate_config()
