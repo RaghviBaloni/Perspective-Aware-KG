@@ -92,8 +92,8 @@ def run_ablation(config, fold, num_topics, data):
 # Add this to the end of the file, replacing the incomplete if __name__ block:
 
 if __name__ == "__main__":
-    DATA_DIR = Path("/home/baloni/Perspective-Aware-KG/data/baseline_models")
-    RESULTS_DIR = Path("/home/baloni/Perspective-Aware-KG/results")
+    DATA_DIR = Path("data/baseline_models")
+    RESULTS_DIR = Path("results")
     RESULTS_DIR.mkdir(exist_ok=True)
     
     configs = { 
