@@ -1,5 +1,6 @@
 # Virtual Environment
 CogPer/
+graphbert/
 venv/
 env/
 
@@ -28,13 +29,26 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Data (keep structure, ignore large files)
+# Data
 data/output/
 data/processed/
 data/annotations/
+data/embeddings/
+data/embedding/
+data/graph/
+*.npy
 *.csv
 *.json
 !requirements.txt
+
+#src files(redundant)
+src/KG_construction.py
+#src/inductive_graph_classifier.py
+#src/inductive_kg_construct.py
+src/compute_embeddings.py
+src/taco_graph_construct.py
+src/kg_construct.py
+src/graph_classifier.py
 
 # Logs and Results
 logs/
@@ -42,6 +56,7 @@ results/
 
 # Training outputs
 data/training/
+data/baseline_models/
 *.pt
 *.pth
 checkpoint-*/
