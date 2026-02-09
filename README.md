@@ -1,6 +1,6 @@
 # Perspective Enriched Social Media Arguments
 
-Research codebase for constructing and evaluating perspective-aware knowledge graphs and classifiers that incorporate perspective annotations into TACO dataset.
+This repository contains research codebase for constructing and evaluating perspective-aware knowledge graphs and classifiers that incorporate perspective annotations into TACO dataset.
 
 ## Requirements
 - Python 3.10+
