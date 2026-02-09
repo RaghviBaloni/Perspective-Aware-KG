@@ -9,8 +9,8 @@ from sklearn.metrics import f1_score, accuracy_score, classification_report
 # ============================================
 # CONFIG
 # ============================================
-EMB_DIR = "/home/baloni/Perspective-Aware-KG/data/baseline_models"
-TACO_CSV = "/home/baloni/Perspective-Aware-KG/data/processed/merged_taco_data.csv"
+EMB_DIR = "data/baseline_models"
+TACO_CSV = "data/processed/merged_taco_data.csv"
 RANDOM_SEED = 123456789
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
