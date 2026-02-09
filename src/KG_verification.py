@@ -3,8 +3,8 @@ import torch
 import json
 
 # Load one fold
-data = torch.load("/home/baloni/Perspective-Aware-KG/data/training/embed_graph_fold_1.pt", weights_only=False)
-metadata = json.load(open("/home/baloni/Perspective-Aware-KG/data/graph/metadata_inductive.json"))
+data = torch.load("/data/training/embed_graph_fold_1.pt", weights_only=False)
+metadata = json.load(open("/data/graph/metadata_inductive.json"))
 
 print("Graph loaded successfully!")
 print(f"  Nodes: {data.x.shape[0]}")
