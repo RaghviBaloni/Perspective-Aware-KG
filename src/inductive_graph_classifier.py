@@ -9,9 +9,9 @@ import json
 from datetime import datetime
 
 #-----Config-----
-GRAPH_DIR = Path("/home/baloni/Perspective-Aware-KG/data/graph")
-TRAINING_DIR = Path("/home/baloni/Perspective-Aware-KG/data/training")
-OUTPUT_DIR = Path("/home/baloni/Perspective-Aware-KG/data/output")
+GRAPH_DIR = Path("/home/user/Perspective-Aware-KG/data/graph")
+TRAINING_DIR = Path("/home/user/Perspective-Aware-KG/data/training")
+OUTPUT_DIR = Path("/home/user/Perspective-Aware-KG/data/output")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 HIDDEN_DIM = 512
