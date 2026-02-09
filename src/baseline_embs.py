@@ -7,8 +7,8 @@ from tqdm import tqdm
 # ============================================
 # CONFIG
 # ============================================
-TACO_CSV = "/home/baloni/Perspective-Aware-KG/data/processed/merged_taco_data.csv"
-MODEL_DIR = "/home/baloni/Perspective-Aware-KG/data/baseline_models"
+TACO_CSV = "data/processed/merged_taco_data.csv"
+MODEL_DIR = "data/baseline_models"
 
 # ============================================
 # LOAD DATA
