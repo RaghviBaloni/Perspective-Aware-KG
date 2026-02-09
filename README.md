@@ -6,38 +6,46 @@ Research codebase for constructing and evaluating perspective-aware knowledge gr
 - Python 3.10+
 - Recommended: create and activate a virtual environment, then install dependencies:
 
+    '''
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
+    '''
 
 ## Quick start
 - Preprocess data:
-
+    '''
     python src/data_preprocessing.py
     python src/data_stats.py
+    '''
 
 - Annotate the TACO dataset with perspective labels
-
+    '''
     python src/annotation_pipeline.py
     python src/csv_conversion.py
+    '''
 
 - Evaluate CV on perspective enriched TACO 
-
+    '''
     src/perspective_classifier.ipynb
+    '''
 
 - Build knowledge graph:
-
+    '''
     pyhton bert_pers_embs.py
     python src/inductive_kg_construct.py
+    '''
 
 - Train / evaluate graph classifier:
-
+    '''
     python src/inductive_graph classifier --model MLP/SAGE/GCN/GAT
+    '''
 
 - Train and evaluate vanilla TACO fine-tuned embeddings
-
+    '''
     python src/baseline_embs.py
     python src/baseline_mlp.py
+    '''
 
 ## Repository layout
 - `data/` — raw and processed datasets, annotations, embeddings, outputs.  
