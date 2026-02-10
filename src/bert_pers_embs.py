@@ -10,9 +10,9 @@ from compute_embeddings import normalize_tweet
 # -----------------------------
 # Paths
 # -----------------------------
-MODEL_DIR = "/home/baloni/Perspective-Aware-KG/data/training"
-PERSPECTIVE_CSV = "/home/baloni/Perspective-Aware-KG/data/processed/perspective_enriched.csv"
-OUTPUT_DIR = "/home/baloni/Perspective-Aware-KG/data/embeddings"
+MODEL_DIR = "data/training"
+PERSPECTIVE_CSV = "data/processed/perspective_enriched.csv"
+OUTPUT_DIR = "data/embeddings"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # -----------------------------

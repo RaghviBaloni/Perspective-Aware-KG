@@ -10,14 +10,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 # ==============================================
 # CONFIG
 # ==============================================
-MERGED_PATH = "/home/baloni/Perspective-Aware-KG/data/processed/merged_taco_data.csv"
-ANNOTATED_PATH = "/home/baloni/Perspective-Aware-KG/data/processed/perspective_enriched.csv"
+MERGED_PATH = "/home/user/Perspective-Aware-KG/data/processed/merged_taco_data.csv"
+ANNOTATED_PATH = "/home/user/Perspective-Aware-KG/data/processed/perspective_enriched.csv"
 
 # NOTE: adjust if your embeddings dir is named differently
-EMB_DIR = Path("/home/baloni/Perspective-Aware-KG/data/embedding")
+EMB_DIR = Path("/home/user/Perspective-Aware-KG/data/embedding")
 
-GRAPH_DIR = Path("/home/baloni/Perspective-Aware-KG/data/graph")
-TRAINING_DIR = Path("/home/baloni/Perspective-Aware-KG/data/training")
+GRAPH_DIR = Path("/home/user/Perspective-Aware-KG/data/graph")
+TRAINING_DIR = Path("/home/user/Perspective-Aware-KG/data/training")
 
 GRAPH_DIR.mkdir(parents=True, exist_ok=True)
 TRAINING_DIR.mkdir(parents=True, exist_ok=True)
